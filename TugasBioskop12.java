@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class TugasBioskop12{
+    public static void main(String[] args) {
+        Scanner input12 =new Scanner(System.in);
+
+        double totalTiket =0, totalHarga = 0;
+        int tiket = 0, pelanggan, i;
+        
+        System.out.print("--- REKAP TOTAL PENJUALAN TIKET BIOSKOP ---");
+        System.out.print("Masukkan jumlah pelanggan dalam sehari: ");
+        pelanggan = input12.nextInt();
+        while (i < pelanggan) {
+            System.out.print("Masukkan jumlah pembelian tiket pelanggan ke-" + pelanggan + ": ");
+            tiket = input12.nextInt();
+            if (tiket > 4) {
+                double diskon = 0.9 * 50000;
+            } else if (tiket > 10) {
+                double diskon = 0.85 * 50000;
+            } else {
+                System.out.print("Tiket tidak valid");
+                continue;
+            }
+            totalTiket += tiket;
+            System.out.print("Jumlah tiket: " + totalTiket);
+            totalHarga = totalTiket * diskon;
+            System.out.print("Total pemasukan: " + totalHarga);
+        i++;
+        } 
+    }
+}
