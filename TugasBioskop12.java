@@ -4,7 +4,7 @@ public class TugasBioskop12{
         Scanner input12 =new Scanner(System.in);
 
         double totalTiket =0, totalHarga = 0, diskon;
-        int tiket = 0, pelanggan, i = 0;
+        int tiket = 0, pelanggan, i = 1;
         
         System.out.println("--- REKAP TOTAL PENJUALAN TIKET BIOSKOP ---");
         System.out.println("Masukkan jumlah pelanggan dalam sehari: ");
@@ -21,9 +21,9 @@ public class TugasBioskop12{
                 continue;
             }
             totalTiket += tiket;
-            System.out.print("Jumlah tiket: " + totalTiket);
+            System.out.println("Jumlah tiket: " + totalTiket);
             totalHarga = totalTiket * 50000 * diskon;
-            System.out.print("Total pemasukan: " + totalHarga);
+            System.out.println("Total pemasukan: " + totalHarga);
         i++;
         } 
     }
