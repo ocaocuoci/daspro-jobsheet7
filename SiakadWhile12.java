@@ -12,7 +12,7 @@ public class SiakadWhile12{
         while (i < jml ){
             System.out.print("Masukkan nilai mahasiswa ke-" +(i + 1) + ": ");
             nilai = sc.nextInt();
-            i++;
+           i++; 
             if (nilai < 0 || nilai > 100 ){
                 System.out.println("Nilai tidak valid. Masukkan lagi nilai yang valid!");
                 continue;
@@ -32,8 +32,6 @@ public class SiakadWhile12{
             } else {
                 System.out.println("Nilai mahasiswa ke-" +(i + 1) + " adalah E" );
             }     
-        }
-        
-        
+        }       
     }
 }
