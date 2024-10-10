@@ -15,21 +15,17 @@ public class TempatParkir12{
             System.out.print("Masukkan durasi parkir (jam): ");
             durasi = sc12.nextInt();
             
-            if (jeniskendaraan == 1 && jeniskendaraan == 2){
+            if (jeniskendaraan == 1 || jeniskendaraan == 2){
                   if (durasi >5){
                 total += 12500;
-                System.out.println("Total: " + total);
                 } else if (jeniskendaraan == 1){
                 total += durasi * 3000;
-                System.out.println("Total: " + total);
                 } else if (jeniskendaraan == 2){
                 total += durasi * 2000;
-                System.out.println("Total: " + total);
                 }
-                 System.out.println("Total keseluruhan: " + total);
             }
 
-           
-        } while (jeniskendaraan !=0);
+        } while (jeniskendaraan !=0); 
+           System.out.println("Total keseluruhan: " + total);
     }
 }
