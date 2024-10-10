@@ -9,10 +9,10 @@ public class TempatParkir12{
             System.out.println("Jenis Kendaraan");
             System.out.println("1. Mobil");
             System.out.println("2. Motor");
-            System.out.println("3. 0 (keluar )");
-            System.out.println("Masukkan angar dari jenis kendaraan yang dipilih = ");
+            System.out.println("0. (keluar )");
+            System.out.print("Masukkan angka dari jenis kendaraan yang dipilih: ");
             jeniskendaraan = sc12.nextInt();
-            System.out.print("Masukkan durasi parkir");
+            System.out.print("Masukkan durasi parkir: ");
             durasi = sc12.nextInt();
             
             if (jeniskendaraan == 1 && jeniskendaraan == 2){
@@ -26,8 +26,6 @@ public class TempatParkir12{
             } else if (jeniskendaraan == 2){
                 total += durasi * 2000;
                 System.out.println("Total: " + total);
-            } else if (jeniskendaraan == 3){
-                System.out.print("Anda keluar dari parkiran");
             }
         } while (jeniskendaraan !=0);
         System.out.println("Total keseluruhan: " + total);
