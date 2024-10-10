@@ -31,7 +31,7 @@ public class TugasBioskop12{
                 totalHarga *= diskon;
             }
             i++;
-            System.out.println("Harga tiket yang dibayar: " + totalHarga);
+            System.out.println("Harga tiket yang dibayar: " + totalHarga );
             totalTiket += tiket;
             totalPenjualan += totalHarga;
 
